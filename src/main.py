@@ -3,6 +3,7 @@ from classes.api import Api
 from classes.tratamento_dados import Tratamento_dados
 
 if __name__ == "__main__":
+    
     api_teste = Api(url="https://fakestoreapi.com")
 
     users = api_teste.users()
@@ -10,8 +11,7 @@ if __name__ == "__main__":
     products = api_teste.products()
 
     tratamento = Tratamento_dados([users, carts, products])
-    
-    ## Faz o carregamento como tabelas 1, 2, 3, etc
+
     load = tratamento.load_data()
     
     sql_query = '''
@@ -75,4 +75,3 @@ if __name__ == "__main__":
     '''
 
     result_df = tratamento.query_data(sql_query)
-

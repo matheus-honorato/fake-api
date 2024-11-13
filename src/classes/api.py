@@ -11,9 +11,12 @@ class Api:
         """Método para realizar uma requisição GET utilizando endpoint e com tratamento de erros das requisições."""
         url = f"{self.url}/{endpoint}"
         try:
+            logging.info(f"Realizando requisição para o endpoint: {url}")
             response = requests.get(url, params=None)
             response.raise_for_status()
+            logging.info(f"Requisição para o endpoint {url} foi bem-sucedida.")
             return response.json()
+        
         except requests.exceptions.RequestException as e:
             logging.error(f"Erro na requisição {url}: {e}")
 

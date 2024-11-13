@@ -19,4 +19,6 @@ class Tratamento_dados:
             logging.info(f"Tabela '{nome_tabela}' carregada no DuckDB.")
 
     def query_data(self, sql_query):
+        logging.info("Iniciando a execução da consulta SQL.")
         result_df = self.con.execute(f"COPY ({sql_query}) TO 'arquivo_final.json' (FORMAT 'json')")
+        logging.info("Consulta SQL executada e arquivo JSON exportado com sucesso.")
