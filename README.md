@@ -6,20 +6,22 @@ Este projeto tem como objetivo desenvolver uma automação que seja capaz de col
 
 
 ## Tecnologias Utilizadas
-Python: Linguagem de programação para fazer requisições à API e processar dados.
-Duckdb: Banco de dados analítico leve e embutido, utilizado para realizar transformações e consultas intermediárias nos dados coletados antes do armazenamento final.
-Docker: Utilizado para criar os contêineres que irá hospedar o ambiente Python.
+- **Python**: Linguagem de programação para fazer requisições à API e processar dados.
+- **Duckdb**: Banco de dados analítico leve e embutido, utilizado para realizar transformações e consultas intermediárias nos dados coletados antes do armazenamento final.
+- **Pandas**: Utilizado para transformar o json em dataframe.
+- **Docker**: Utilizado para criar os contêineres que irá hospedar o ambiente Python.
 
 <p align="left">
-<img src="/img/python-logo.png" alt="python" height="50" /> 
-<img src="/img/postgres-logo.png" alt="postgres" height="50" /> 
+
 <img src="/img/docker-logo.png" alt="docker" height="50"/> 
-<img src="/img/duckdb-logo.svg" alt="docker" height="50"/> 
+<img src="/img/python-logo.png" alt="python" height="50" /> 
+<img src="/img/pandas-logo.svg" alt="pandas" height="50" /> 
+<img src="/img/duckdb-logo.svg" alt="duck" height="50"/> 
 </p>
 
 ## Arquitetura
 
-![Diagrama de Arquitetura](img/arquitetura_consumo_dados.png)
+![Diagrama de Arquitetura](img/arquitetura_consumo_dados.jpg)
 
 ## Etapas da construção do projeto
 
