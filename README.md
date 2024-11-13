@@ -1,4 +1,4 @@
-# Projeto Engenheiro de dados: Consumo de dados via API
+# Projeto Engenharia de dados: Consumo de dados via API
 
 ## Introdução
 
